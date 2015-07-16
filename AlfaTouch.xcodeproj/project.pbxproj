@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0BFA48E1B58249000AABD13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA48D1B58249000AABD13 /* main.m */; };
+		D0BFA4911B58249000AABD13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA4901B58249000AABD13 /* AppDelegate.m */; };
+		D0BFA4941B58249000AABD13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA4931B58249000AABD13 /* ViewController.m */; };
+		D0BFA4971B58249000AABD13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BFA4951B58249000AABD13 /* Main.storyboard */; };
+		D0BFA4991B58249000AABD13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BFA4981B58249000AABD13 /* Images.xcassets */; };
+		D0BFA49C1B58249000AABD13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BFA49A1B58249000AABD13 /* LaunchScreen.xib */; };
+		D0BFA4A81B58249000AABD13 /* AlfaTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA4A71B58249000AABD13 /* AlfaTouchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0BFA4A21B58249000AABD13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0BFA4801B58249000AABD13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BFA4871B58249000AABD13;
+			remoteInfo = AlfaTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0BFA4881B58249000AABD13 /* AlfaTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BFA48C1B58249000AABD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BFA48D1B58249000AABD13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0BFA48F1B58249000AABD13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0BFA4901B58249000AABD13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0BFA4921B58249000AABD13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0BFA4931B58249000AABD13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0BFA4961B58249000AABD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0BFA4981B58249000AABD13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0BFA49B1B58249000AABD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D0BFA4A11B58249000AABD13 /* AlfaTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfaTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BFA4A61B58249000AABD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BFA4A71B58249000AABD13 /* AlfaTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlfaTouchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0BFA4851B58249000AABD13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BFA49E1B58249000AABD13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0BFA47F1B58249000AABD13 = {
+			isa = PBXGroup;
+			children = (
+				D0BFA48A1B58249000AABD13 /* AlfaTouch */,
+				D0BFA4A41B58249000AABD13 /* AlfaTouchTests */,
+				D0BFA4891B58249000AABD13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BFA4891B58249000AABD13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA4881B58249000AABD13 /* AlfaTouch.app */,
+				D0BFA4A11B58249000AABD13 /* AlfaTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0BFA48A1B58249000AABD13 /* AlfaTouch */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA48F1B58249000AABD13 /* AppDelegate.h */,
+				D0BFA4901B58249000AABD13 /* AppDelegate.m */,
+				D0BFA4921B58249000AABD13 /* ViewController.h */,
+				D0BFA4931B58249000AABD13 /* ViewController.m */,
+				D0BFA4951B58249000AABD13 /* Main.storyboard */,
+				D0BFA4981B58249000AABD13 /* Images.xcassets */,
+				D0BFA49A1B58249000AABD13 /* LaunchScreen.xib */,
+				D0BFA48B1B58249000AABD13 /* Supporting Files */,
+			);
+			path = AlfaTouch;
+			sourceTree = "<group>";
+		};
+		D0BFA48B1B58249000AABD13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA48C1B58249000AABD13 /* Info.plist */,
+				D0BFA48D1B58249000AABD13 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0BFA4A41B58249000AABD13 /* AlfaTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA4A71B58249000AABD13 /* AlfaTouchTests.m */,
+				D0BFA4A51B58249000AABD13 /* Supporting Files */,
+			);
+			path = AlfaTouchTests;
+			sourceTree = "<group>";
+		};
+		D0BFA4A51B58249000AABD13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA4A61B58249000AABD13 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0BFA4871B58249000AABD13 /* AlfaTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BFA4AB1B58249100AABD13 /* Build configuration list for PBXNativeTarget "AlfaTouch" */;
+			buildPhases = (
+				D0BFA4841B58249000AABD13 /* Sources */,
+				D0BFA4851B58249000AABD13 /* Frameworks */,
+				D0BFA4861B58249000AABD13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlfaTouch;
+			productName = AlfaTouch;
+			productReference = D0BFA4881B58249000AABD13 /* AlfaTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0BFA4A01B58249000AABD13 /* AlfaTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BFA4AE1B58249100AABD13 /* Build configuration list for PBXNativeTarget "AlfaTouchTests" */;
+			buildPhases = (
+				D0BFA49D1B58249000AABD13 /* Sources */,
+				D0BFA49E1B58249000AABD13 /* Frameworks */,
+				D0BFA49F1B58249000AABD13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0BFA4A31B58249000AABD13 /* PBXTargetDependency */,
+			);
+			name = AlfaTouchTests;
+			productName = AlfaTouchTests;
+			productReference = D0BFA4A11B58249000AABD13 /* AlfaTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0BFA4801B58249000AABD13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Estevan Hernandez";
+				TargetAttributes = {
+					D0BFA4871B58249000AABD13 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D0BFA4A01B58249000AABD13 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D0BFA4871B58249000AABD13;
+					};
+				};
+			};
+			buildConfigurationList = D0BFA4831B58249000AABD13 /* Build configuration list for PBXProject "AlfaTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0BFA47F1B58249000AABD13;
+			productRefGroup = D0BFA4891B58249000AABD13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BFA4871B58249000AABD13 /* AlfaTouch */,
+				D0BFA4A01B58249000AABD13 /* AlfaTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0BFA4861B58249000AABD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BFA4971B58249000AABD13 /* Main.storyboard in Resources */,
+				D0BFA49C1B58249000AABD13 /* LaunchScreen.xib in Resources */,
+				D0BFA4991B58249000AABD13 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BFA49F1B58249000AABD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0BFA4841B58249000AABD13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BFA4941B58249000AABD13 /* ViewController.m in Sources */,
+				D0BFA4911B58249000AABD13 /* AppDelegate.m in Sources */,
+				D0BFA48E1B58249000AABD13 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BFA49D1B58249000AABD13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BFA4A81B58249000AABD13 /* AlfaTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0BFA4A31B58249000AABD13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0BFA4871B58249000AABD13 /* AlfaTouch */;
+			targetProxy = D0BFA4A21B58249000AABD13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0BFA4951B58249000AABD13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BFA4961B58249000AABD13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0BFA49A1B58249000AABD13 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BFA49B1B58249000AABD13 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0BFA4A91B58249000AABD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0BFA4AA1B58249000AABD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0BFA4AC1B58249100AABD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlfaTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0BFA4AD1B58249100AABD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlfaTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0BFA4AF1B58249100AABD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AlfaTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaTouch.app/AlfaTouch";
+			};
+			name = Debug;
+		};
+		D0BFA4B01B58249100AABD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AlfaTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaTouch.app/AlfaTouch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0BFA4831B58249000AABD13 /* Build configuration list for PBXProject "AlfaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BFA4A91B58249000AABD13 /* Debug */,
+				D0BFA4AA1B58249000AABD13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BFA4AB1B58249100AABD13 /* Build configuration list for PBXNativeTarget "AlfaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BFA4AC1B58249100AABD13 /* Debug */,
+				D0BFA4AD1B58249100AABD13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0BFA4AE1B58249100AABD13 /* Build configuration list for PBXNativeTarget "AlfaTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BFA4AF1B58249100AABD13 /* Debug */,
+				D0BFA4B01B58249100AABD13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0BFA4801B58249000AABD13 /* Project object */;
+}
