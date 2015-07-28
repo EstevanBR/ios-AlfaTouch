@@ -32,7 +32,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIImageView *bogart = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bogart"]];
-    bogart.frame = CGRectMake(100, 100, 200, 200);
+    bogart.frame = CGRectMake(10, 40, 200, 200);
     [bogart setContentMode:UIViewContentModeScaleAspectFit];
     [self.view addSubview:bogart];
     

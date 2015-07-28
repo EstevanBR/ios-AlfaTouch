@@ -54,6 +54,10 @@
                     forState:UIControlStateHighlighted];
     [evanButtonView setFrame:CGRectMake(15, 70, 100, 100)];
     
+    UITextView *blurb = [[UITextView alloc] initWithFrame:CGRectMake(0, 400, 300, 100)];
+    blurb.text = @"This screen doesn't do much yet... I was experimenting with the segmented controls. the View Checklist and View Profile buttons will take you to those views with a breadcrumb / back button. Tapping the photo of the blue triangle will open a full screen view for the photo";
+    [self.view addSubview:blurb];
+    
     [self.view addSubview:evanButtonView];
     
     [evanButtonView addTarget:self

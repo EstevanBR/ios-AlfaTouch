@@ -27,6 +27,7 @@
     
     self.fileNames = @[@"Octopus", @"Mountains", @"Dogs", @"Movies"];
     self.imageDescriptions = @[@"What would you do with 8 legs?", @"Snow capped mountains on planet earth", @"Woof woof, bark bark!", @"I like to watch movies\U0001F431"];
+
     
     return self;
 }
@@ -35,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //self.view.backgroundColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
+    self.view.backgroundColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
     self.tableView.separatorColor = [UIColor redColor];
     
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -79,8 +80,6 @@
     
     cell.imageView.image = [UIImage imageNamed:self.fileNames[indexPath.row]];
     [cell.imageView setContentMode:UIViewContentModeScaleAspectFit];
-    
-    //cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, 75);
     
     return cell;
 }
