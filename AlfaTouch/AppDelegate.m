@@ -45,8 +45,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     
     UITabBarController      *tabController = [[UITabBarController alloc] init];
     [tabController setViewControllers:@[addNavController, checklistNavController, profileNavController]];
-    tabController.view.tintColor = [UIColor colorWithRed:1.0 green:0.75 blue:0.75 alpha:1];
-    //self.window.tintColor = [UIColor orangeColor];
+    tabController.view.tintColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.75 alpha:0.75];
     profileNavController.view.tintColor = [UIColor redColor];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

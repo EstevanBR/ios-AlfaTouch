@@ -7,6 +7,7 @@
 //
 
 #import "PhotoViewController.h"
+#import "ChecklistTableViewController.h"
 
 @interface PhotoViewController ()
 
@@ -22,12 +23,8 @@
     imageView.frame = CGRectMake(10, 50, 300, 300);
     imageView.backgroundColor = [UIColor redColor];
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 350, 200, 40)];
-    titleLabel.text = [[[[self.imageFileName
-                          stringByAppendingString:self.imageFileName]
-                         stringByAppendingString:self.imageFileName]
-                        stringByAppendingString:self.imageFileName]
-                       stringByAppendingString:self.imageFileName];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 350, 300, 40)];
+    titleLabel.text = self.imageDescription;
     NSLog(@"%@", titleLabel.text);
     titleLabel.backgroundColor = [UIColor whiteColor];
     titleLabel.numberOfLines = 0;

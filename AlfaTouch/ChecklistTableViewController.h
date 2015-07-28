@@ -11,5 +11,6 @@
 @interface ChecklistTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *fileNames;
 @property (strong, nonatomic) NSArray *titleNames;
+@property (strong, nonatomic) NSArray *imageDescriptions;
 
 @end

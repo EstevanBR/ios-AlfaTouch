@@ -26,6 +26,7 @@
     }
     
     self.fileNames = @[@"Octopus", @"Mountains", @"Dogs", @"Movies"];
+    self.imageDescriptions = @[@"What would you do with 8 legs?", @"Snow capped mountains on planet earth", @"Woof woof, bark bark!", @"I like to watch movies\U0001F431"];
     
     return self;
 }
@@ -106,6 +107,7 @@
     NSLog(@"user tapped row #%d", indexPath.row);
     PhotoViewController *photoVC = [[PhotoViewController alloc] init];
     photoVC.imageFileName = self.fileNames[indexPath.row];
+    photoVC.imageDescription = self.imageDescriptions[indexPath.row];
     
     [self.navigationController pushViewController:photoVC animated:YES];
     
