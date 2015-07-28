@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "AddViewController.h"
+#import "ChecklistTableViewController.h"
+#import "ProfileViewController.h"
+@import EventKit;
+@import UIKit;
 
 @interface AppDelegate ()
 
@@ -15,8 +21,40 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    EKEventStore *store = [[EKEventStore alloc] init];
+    //NSLog(@"yay launch");
+    
+    AddViewController       *addViewController = [[AddViewController alloc] init];
+    UINavigationController  *addNavController = [[UINavigationController alloc]
+                                                 initWithRootViewController:addViewController];
+    [addNavController setTitle:@"+Add"];
+    
+    ChecklistTableViewController *checklistTableViewController = [[ChecklistTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    UINavigationController  *checklistNavController = [[UINavigationController alloc]
+                                                       initWithRootViewController:checklistTableViewController];
+    [checklistNavController setTitle:@"Checklist"];
+    
+    ProfileViewController   *profileViewController = [[ProfileViewController alloc] init];
+    UINavigationController  *profileNavController = [[UINavigationController alloc]
+                                                     initWithRootViewController:profileViewController];
+    [profileNavController setTitle:@"Profile"];
+    
+    UITabBarController      *tabController = [[UITabBarController alloc] init];
+    [tabController setViewControllers:@[addNavController, checklistNavController, profileNavController]];
+    tabController.view.tintColor = [UIColor colorWithRed:1.0 green:0.75 blue:0.75 alpha:1];
+    //self.window.tintColor = [UIColor orangeColor];
+    profileNavController.view.tintColor = [UIColor redColor];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = tabController;
+    [self.window makeKeyAndVisible];
+    [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error){}];
+    
+    
     return YES;
 }
 
@@ -40,6 +78,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)requestAccessToEntityType:(EKEntityType)entityType
+                       completion:(EKEventStoreRequestAccessCompletionHandler)completion {
+    
 }
 
 @end

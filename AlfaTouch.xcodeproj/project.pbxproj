@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04760B91B615D8E000EC65B /* ChecklistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04760B81B615D8E000EC65B /* ChecklistTableViewController.m */; };
+		D04760BC1B615D9F000EC65B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04760BB1B615D9F000EC65B /* AddViewController.m */; };
+		D04760BF1B61A235000EC65B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04760BE1B61A235000EC65B /* ProfileViewController.m */; };
+		D04760C21B66D6D9000EC65B /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04760C11B66D6D9000EC65B /* PhotoViewController.m */; };
 		D0BFA48E1B58249000AABD13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA48D1B58249000AABD13 /* main.m */; };
 		D0BFA4911B58249000AABD13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA4901B58249000AABD13 /* AppDelegate.m */; };
 		D0BFA4941B58249000AABD13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BFA4931B58249000AABD13 /* ViewController.m */; };
@@ -27,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04760B71B615D8E000EC65B /* ChecklistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistTableViewController.h; sourceTree = "<group>"; };
+		D04760B81B615D8E000EC65B /* ChecklistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistTableViewController.m; sourceTree = "<group>"; };
+		D04760BA1B615D9F000EC65B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		D04760BB1B615D9F000EC65B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		D04760BD1B61A235000EC65B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D04760BE1B61A235000EC65B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D04760C01B66D6D9000EC65B /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		D04760C11B66D6D9000EC65B /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		D0BFA4881B58249000AABD13 /* AlfaTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BFA48C1B58249000AABD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BFA48D1B58249000AABD13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +95,14 @@
 			children = (
 				D0BFA48F1B58249000AABD13 /* AppDelegate.h */,
 				D0BFA4901B58249000AABD13 /* AppDelegate.m */,
+				D04760BD1B61A235000EC65B /* ProfileViewController.h */,
+				D04760BE1B61A235000EC65B /* ProfileViewController.m */,
+				D04760B71B615D8E000EC65B /* ChecklistTableViewController.h */,
+				D04760B81B615D8E000EC65B /* ChecklistTableViewController.m */,
+				D04760C01B66D6D9000EC65B /* PhotoViewController.h */,
+				D04760C11B66D6D9000EC65B /* PhotoViewController.m */,
+				D04760BA1B615D9F000EC65B /* AddViewController.h */,
+				D04760BB1B615D9F000EC65B /* AddViewController.m */,
 				D0BFA4921B58249000AABD13 /* ViewController.h */,
 				D0BFA4931B58249000AABD13 /* ViewController.m */,
 				D0BFA4951B58249000AABD13 /* Main.storyboard */,
@@ -219,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04760BC1B615D9F000EC65B /* AddViewController.m in Sources */,
 				D0BFA4941B58249000AABD13 /* ViewController.m in Sources */,
+				D04760B91B615D8E000EC65B /* ChecklistTableViewController.m in Sources */,
 				D0BFA4911B58249000AABD13 /* AppDelegate.m in Sources */,
+				D04760BF1B61A235000EC65B /* ProfileViewController.m in Sources */,
 				D0BFA48E1B58249000AABD13 /* main.m in Sources */,
+				D04760C21B66D6D9000EC65B /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +442,7 @@
 				D0BFA4AD1B58249100AABD13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0BFA4AE1B58249100AABD13 /* Build configuration list for PBXNativeTarget "AlfaTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				D0BFA4B01B58249100AABD13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
