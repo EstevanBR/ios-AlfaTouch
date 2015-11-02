@@ -33,7 +33,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
                                                  initWithRootViewController:addViewController];
     [addNavController setTitle:@"+Add"];
     
-    ChecklistTableViewController *checklistTableViewController = [[ChecklistTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    ChecklistTableViewController *checklistTableViewController = [[ChecklistTableViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController  *checklistNavController = [[UINavigationController alloc]
                                                        initWithRootViewController:checklistTableViewController];
     [checklistNavController setTitle:@"Checklist"];

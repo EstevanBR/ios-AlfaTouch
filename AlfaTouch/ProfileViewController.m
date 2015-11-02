@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "AddViewController.h"
 #import "ChecklistTableViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface ProfileViewController ()
 
@@ -31,8 +32,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImageView *bogart = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bogart"]];
+    UIImageView *bogart = [[UIImageView alloc] init];
     bogart.frame = CGRectMake(10, 40, 200, 200);
+    [bogart setImageWithURL:[NSURL URLWithString:@"http://i.imgur.com/GWxg2wC.jpg"]];
+    //http://stackoverflow.com/questions/31216758/how-can-i-add-nsapptransportsecurity-to-my-info-plist-file
     [bogart setContentMode:UIViewContentModeScaleAspectFit];
     [self.view addSubview:bogart];
     

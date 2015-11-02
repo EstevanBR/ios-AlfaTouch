@@ -19,16 +19,12 @@
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    //http://www.outofcore.com/2011/07/ios-development-proper-use-of-initwithnibnamebundle-affects-uitableviewcontroller/
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Checklist Table View";
+        self.title = @"Checklist";
         self.tabBarItem.image = [UIImage imageNamed:@"list"];
     }
-    
-    self.fileNames = @[@"Octopus", @"Mountains", @"Dogs", @"Movies"];
-    self.imageDescriptions = @[@"What would you do with 8 legs?", @"Snow capped mountains on planet earth", @"Woof woof, bark bark!", @"I like to watch movies\U0001F431"];
-
-    
     return self;
 }
 
@@ -36,6 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.fileNames = @[@"Octopus", @"Mountains", @"Dogs", @"Movies"];
+    NSLog(@"ZZZZ count is %ld", self.fileNames.count);
+    self.imageDescriptions = @[@"What would you do with 8 legs?", @"Snow capped mountains on planet earth", @"Woof woof, bark bark!", @"I like to watch movies\U0001F431"];
+    
+    
+
     self.view.backgroundColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
     self.tableView.separatorColor = [UIColor redColor];
     
@@ -59,8 +61,9 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+    NSLog(@"filesNames.count = %ld", self.fileNames.count);
     return self.fileNames.count;
+    //return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,9 +80,8 @@
     
     cell.detailTextLabel.text = self.fileNames[indexPath.row];
     cell.detailTextLabel.text = [cell.detailTextLabel.text stringByAppendingString:@" happy stuff!"];
-    
     cell.imageView.image = [UIImage imageNamed:self.fileNames[indexPath.row]];
-    [cell.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [cell.imageView setContentMode:UIViewContentModeScaleToFill];
     
     return cell;
 }
@@ -101,9 +103,11 @@
     [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"user tapped row #%d", indexPath.row);
+    NSLog(@"user tapped row #%ld", indexPath.row);
     PhotoViewController *photoVC = [[PhotoViewController alloc] init];
     photoVC.imageFileName = self.fileNames[indexPath.row];
     photoVC.imageDescription = self.imageDescriptions[indexPath.row];
